@@ -1,0 +1,24 @@
+{
+    "__component__": "Memory",
+    "items": [
+        {
+            "__component__": "MemoryEvent",
+            "guild_id": "<int>823511949279100950",
+            "author_id": "<int>709016093129441331",
+            "event_name": "PUBLISH",
+            "payload": {
+                "publication_type": {
+                    "__component__": "DiscordObject",
+                    "type": "Raw",
+                    "value": "video"
+                },
+                "content": {
+                    "__component__": "DiscordObject",
+                    "type": "Raw",
+                    "value": "https://youtu.be/NlTUGqoWr-E"
+                }
+            }
+        }
+    ],
+    "size": "<int>100"
+}
