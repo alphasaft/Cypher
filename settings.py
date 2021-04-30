@@ -1,3 +1,3 @@
-TOKEN = "ODM2Njg3MTQ5MTkzNDk0NTY4.YIhnoQ.Pc9NU65h4HIIQIOYbksWgruCRnw"
+TOKEN = None # (!) isn't the real value
 PREFIX = 'V-'
 DESCRIPTION = '''An encyclopedia'''

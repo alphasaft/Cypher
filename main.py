@@ -3,6 +3,7 @@
 from events import *
 from commands import *
 from settings import *
+from token import TOKEN
 from bot import Cypher
 
 bot = Cypher()
