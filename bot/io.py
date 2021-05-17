@@ -15,7 +15,7 @@ class Globals:
 	def require(self, item):
 		value = self._storage.get(item)
 		if value is None:
-			raise NameError(f"A {item} argument seems to be required to decode the json file. Make sure you provided it.")
+			raise NameError("A %s argument seems to be required to decode the json file. Make sure you provided it." % item)
 		return value
 	
 
@@ -58,7 +58,7 @@ class JsonIOSupporter(ABC):
 			elif field_type == "dict":
 				self._fields[field] = map_dict(lambda it: it.__dump__() if isinstance(it, JsonIOSupporter) else it, value)
 			else:
-				self._fields[field] = f"<{field_type}>{value}"
+				self._fields[field] = "<%s>%s" % (field_type, value)
 		
 		def to_dict(self):
 			return self._fields
